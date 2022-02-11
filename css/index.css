@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "arial";
+
+}
+.header{
+    background: white;
+    padding: 0.5em 3em ;
+    color: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    align-self: auto;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.navbar ul li{
+    padding: 1em;
+
+    
+}
+.banner-top{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+#content img{
+    width: 100%;
+
+}
+.primero{
+    background: rgb(207,0,15);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}   
+.segundo{
+    background: rgb(78, 133, 96);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}   
+.tercero{
+    background: rgb(83, 84, 105);
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+}  
+.footer{
+    margin-top: 4em;
+    border-top: 5px solid white;
+    padding: 2em 3em;
+    background: rgb(82,15,15);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+} 
+.data{
+    background: rgb(224, 207, 207);
+    padding: 2em;
+    color: black;
+    border-radius: 15px;
+}
+.map{
+    width: 60%;
+}
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    body{
+        background: tomato;
+    }
+}
+@media screen and (min-width: 660px) and (max-width: 989px){
+    body{
+        background: yellow;
+    
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul{
+        text-align: center;
+    }
+    .banner-top{
+        display: none;
+    }
+    .primero{
+        width: 100%;
+    }
+    .primero figure{
+        height: 300px;
+        overflow: hidden;
+    }
+    .segundo.tercero{
+        width: 50%;
+        padding: 2em;
+    }
+    #content article p {
+        font-size: 1.5em;
+        margin: 0.5em;
+    }
+    #content article h2{
+        font-size: 2.2em;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:1px) and (max-width: 659px){
+    body{
+        background: green;
+    }
+    header{
+        flex-wrap: wrap;
+
+    }
+    .banner-top{
+        display: none;
+    
+    }
+    .navbar ul li{
+        text-align: center;
+    }
+    .primer, .segundo,.tercero{
+        width: 100%;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+}
+
